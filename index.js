@@ -1,7 +1,7 @@
 const fs = require('fs');
 const express = require('express');
 const app = express();
-require('dotenv').config()
+require('dotenv').config();
 
 
 const port = process.env.PORT
@@ -16,7 +16,7 @@ app.get('/createFiles', (req, res) => {
     let date = new Date().toUTCString();
     console.log(date);
 
-const path = "./timeanddate/date.txt";
+const path = `./timeanddate/date.txt`;
 
 
     //to write a file
