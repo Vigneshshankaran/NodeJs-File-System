@@ -13,7 +13,7 @@ res.send('Hello World');
 app.get('/createFiles', (req, res) => {
 
 
-    let date = new Date().toUTCString();
+    let date = new Date().toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
     console.log(date);
 
 const path = `./timeanddate/date.txt`;
