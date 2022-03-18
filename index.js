@@ -4,7 +4,7 @@ const app = express();
 require('dotenv').config()
 
 
-const PORT = process.env.PORT;
+const port = process.env.PORT
 
 app.get('/', (req, res) =>{
 res.send('Hello World');
@@ -31,4 +31,6 @@ const path = "./timeanddate/date.txt";
 
 
 
-app.listen(process.env.PORT);
+app.listen(port,()=>{ 
+    console.log("server listening to port "+port);
+});
